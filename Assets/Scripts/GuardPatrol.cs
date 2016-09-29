@@ -44,26 +44,34 @@ public class GuardPatrol : MonoBehaviour {
 		if(rotationTime<maxRotateTime){
 			Quaternion deltaRotation = Quaternion.Euler (transform.up * rotationSpeed * Time.deltaTime);
 			transform.rotation = r.rotation*deltaRotation;
-            agent.speed = 0;
-            agent.updatePosition = false;
+ 
+  
 		}else if(rotationTime<maxRotateTime * 3){
 			Quaternion deltaRotation = Quaternion.Euler (transform.up * rotationSpeed * Time.deltaTime);
 			transform.rotation = r.rotation * Quaternion.Inverse(deltaRotation);
-            agent.speed = 0;
-            agent.updatePosition = false;
+
+  
 		}else{
-            if (agent.speed == 0)
-            {
-                agent.speed = originalSpeed;
-            }
-			agent.updatePosition = true;
+
 			agent.updateRotation = true;
 		}
 		rotationTime += Time.deltaTime;
 	}
+	void checkSpeed(){
+		if(player){
+			agent.speed = originalSpeed * pursuitMultiplier;
+		}else{
+			if(rotationTime<maxRotateTime*3){
+				agent.speed = 0;
+			}else{
+				agent.speed = originalSpeed;
+			}
 
+		}
+	}
 	void Update () {
 		Rotate ();
+		checkSpeed ();
 		if(player){
 			agent.destination = player.transform.position;
 			if(!pursuit.activeSelf){
@@ -133,7 +141,6 @@ public class GuardPatrol : MonoBehaviour {
                 rotationTime = 0;
             }
 			
-			//agent.speed = 0;
 
 		}
 	}
@@ -151,22 +158,14 @@ public class GuardPatrol : MonoBehaviour {
 			if(visionpoint){
 				if(agent.destination!=visionpoint.transform.position){
 					agent.SetDestination (visionpoint.transform.position);
-					agent.speed = originalSpeed * spottedMultiplier;
 				}
 			}else{
 				if(agent.destination!=nextWaypoint.transform.position){
-					agent.SetDestination (nextWaypoint.transform.position);
-                    if (rotationTime < maxRotateTime * 3)
-                    {
-                        agent.speed = originalSpeed;
-                    }
-					
+					agent.SetDestination (nextWaypoint.transform.position);				
 				}
 			}
 		}else{
-			if(agent.speed==originalSpeed){
-				agent.speed *= pursuitMultiplier;
-			}
+
 		}
 
 	}
