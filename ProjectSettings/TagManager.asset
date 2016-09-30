@@ -8,6 +8,7 @@ TagManager:
   - Fox
   - Guard
   - Den
+  - Key
   layers:
   - Default
   - TransparentFX
