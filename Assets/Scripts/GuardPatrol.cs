@@ -39,7 +39,6 @@ public class GuardPatrol : MonoBehaviour {
 	}
 
 	void Rotate(){
-		//r.rotation *= deltaRotation;
 		agent.updateRotation = false;
 		if(rotationTime<maxRotateTime){
 			Quaternion deltaRotation = Quaternion.Euler (transform.up * rotationSpeed * Time.deltaTime);
@@ -121,7 +120,6 @@ public class GuardPatrol : MonoBehaviour {
 		if(visionpoint){
 			Destroy (visionpoint.gameObject);
 		}
-
 		visionpoint = v;
 		agent.SetDestination (v.transform.position);
 		/*print (agent.nextPosition);
@@ -135,11 +133,10 @@ public class GuardPatrol : MonoBehaviour {
 		if(visionpoint==v){
 			Destroy (v.gameObject);
 			visionpoint = null;
-            //agent.SetDestination (nextWaypoint.transform.position);
             if (!player)
             {
                 rotationTime = 0;
-            }
+			}
 			
 
 		}

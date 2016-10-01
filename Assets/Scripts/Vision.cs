@@ -23,19 +23,14 @@ public class Vision : MonoBehaviour {
 
 	}
 	void OnTriggerStay(Collider other){
-		//print (other.tag);
 		if (other.tag.Equals ("Fox")) {
 			RaycastHit hit=new RaycastHit();
 			Physics.Linecast (transform.parent.position,other.transform.position,out hit);
-
 			if(hit.collider.tag.Equals ("Fox")){
-				//print (other.transform.position);
 				if(Time.realtimeSinceStartup>lastTime+cd){
 					lastTime = Time.realtimeSinceStartup;
-					GameObject gameObject = (GameObject)Instantiate (g, other.transform.position, other.transform.rotation);
-					gameObject.SetActive (true);
-					GuardPatrol patrol = GetComponentInParent <GuardPatrol> ();
-					patrol.setVisionPoint (gameObject.GetComponent <VisionPoint> ());
+					setVisionPoint (other.transform);
+
 				}
 
 			}
@@ -43,5 +38,11 @@ public class Vision : MonoBehaviour {
 			/*Destroy(other.gameObject);*/
 
 		}
+	}
+	public void setVisionPoint(Transform other){
+		GameObject gameObject = (GameObject)Instantiate (g, other.transform.position, other.transform.rotation);
+		gameObject.SetActive (true);
+		GuardPatrol patrol = GetComponentInParent <GuardPatrol> ();
+		patrol.setVisionPoint (gameObject.GetComponent <VisionPoint> ());
 	}
 }
