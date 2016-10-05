@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour {
 	void Awake() {
 		// print ("alku" + transform.position);
 		playerRigidBody = GetComponent<Rigidbody>();
+		gameObject.tag="Fox";
 	}
 
 	void FixedUpdate() {
