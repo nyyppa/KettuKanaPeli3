@@ -3295,6 +3295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guards:
   - {fileID: 1998901160}
+  body: {fileID: 0}
 --- !u!1 &483810423
 GameObject:
   m_ObjectHideFlags: 0
@@ -4601,7 +4602,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.76146036, g: 0.64705884, b: 1, a: 1}
   m_Intensity: 1.25
-  m_Range: 32.45
+  m_Range: 20
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -4613,7 +4614,7 @@ Light:
     m_NormalBias: 0.4
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
+  m_DrawHalo: 1
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
@@ -7760,7 +7761,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 185d87f220d28cf41b126e60059d6023, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.20000012
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 185d87f220d28cf41b126e60059d6023, type: 3}
       propertyPath: m_LocalScale.y
@@ -7768,7 +7769,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 185d87f220d28cf41b126e60059d6023, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.20000012
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: 185d87f220d28cf41b126e60059d6023, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8103,6 +8104,7 @@ GameObject:
   - 33: {fileID: 1207393677}
   - 135: {fileID: 1207393676}
   - 23: {fileID: 1207393675}
+  - 135: {fileID: 1207393679}
   m_Layer: 0
   m_Name: Den
   m_TagString: Den
@@ -8173,6 +8175,18 @@ Transform:
   - {fileID: 893028868}
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!135 &1207393679
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1207393674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1207578960
 Prefab:
   m_ObjectHideFlags: 0
@@ -10077,7 +10091,7 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100016, guid: 185d87f220d28cf41b126e60059d6023, type: 3}
   m_PrefabInternal: {fileID: 1553244176}
---- !u!65 &1598869110
+--- !u!65 &1598869112
 BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
