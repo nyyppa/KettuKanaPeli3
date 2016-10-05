@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AttrackGuards : MonoBehaviour {
+public class AttractGuards : MonoBehaviour {
 	public GuardPatrol []guards;
 	Rigidbody body;
 	// Use this for initialization
