@@ -4,6 +4,9 @@ using System.Collections;
 public class SpawnGuard : MonoBehaviour {
 
 	void OnDisable(){
-		SpawnPoint.SpawnGuard ();
+		if(this.enabled){
+			SpawnPoint.SpawnGuard ();
+		}
+
 	}
 }
