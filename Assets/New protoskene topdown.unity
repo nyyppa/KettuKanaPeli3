@@ -8249,6 +8249,7 @@ GameObject:
   - 4: {fileID: 1218328507}
   - 33: {fileID: 1218328509}
   - 23: {fileID: 1218328508}
+  - 64: {fileID: 1218328510}
   m_Layer: 0
   m_Name: Siilo
   m_TagString: Untagged
@@ -8308,6 +8309,18 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1218328506}
+  m_Mesh: {fileID: 4300000, guid: af7c1c004cb43ba448c1888472a75a5f, type: 3}
+--- !u!64 &1218328510
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1218328506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
   m_Mesh: {fileID: 4300000, guid: af7c1c004cb43ba448c1888472a75a5f, type: 3}
 --- !u!1 &1219923269
 GameObject:
