@@ -18,4 +18,5 @@ public class SpawnPoint : MonoBehaviour {
 	public static void SpawnGuard(){
 		GameObject gameObject = (GameObject)Instantiate (Guard, spawnPoint.transform.position, spawnPoint.transform.rotation);
 	}
+
 }
