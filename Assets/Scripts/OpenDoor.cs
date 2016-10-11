@@ -14,7 +14,9 @@ public class OpenDoor : MonoBehaviour {
 	}
 	void OnCollisionEnter(Collision other){
 		if(other.collider.tag.Equals ("Fox")){
-			lockedDoor.SetActive (false);
+			if(lockedDoor){
+				lockedDoor.SetActive (false);
+			}
 			gameObject.SetActive (false);
 		}
 	}
