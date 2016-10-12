@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class OpenDoor : MonoBehaviour {
+public class OpenDoor : UseStuff {
 	public GameObject lockedDoor;
 	// Use this for initialization
 	void Start () {
@@ -12,13 +12,10 @@ public class OpenDoor : MonoBehaviour {
 	void Update () {
 	
 	}
-	void OnCollisionEnter(Collision other){
-		if(other.collider.tag.Equals ("Fox")){
-			if(lockedDoor){
-				lockedDoor.SetActive (false);
-			}
-			gameObject.SetActive (false);
+	public override void UseStuffAction(){
+		if(lockedDoor){
+			lockedDoor.SetActive (false);
 		}
+		gameObject.SetActive (false);
 	}
-
 }
