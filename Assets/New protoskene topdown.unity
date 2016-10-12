@@ -4990,6 +4990,10 @@ MonoBehaviour:
   chickenInMouth: {fileID: 1830925132}
   chickenInDen1: {fileID: 1671676937}
   chickenInDen2: {fileID: 893028867}
+--- !u!4 &656009023 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400014, guid: 2acc8efb101d4f44885e0fa42bf6ab3d, type: 3}
+  m_PrefabInternal: {fileID: 656009015}
 --- !u!108 &656009024
 Light:
   m_ObjectHideFlags: 0
@@ -12796,6 +12800,7 @@ GameObject:
   - 92: {fileID: 1961886006}
   - 124: {fileID: 1961886005}
   - 81: {fileID: 1961886004}
+  - 114: {fileID: 1961886009}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -12871,6 +12876,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1961886009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1961886003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d8a95b4d01b34648b70ee89d6a35a0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dampTime: 0.15
+  target: {fileID: 656009023}
 --- !u!1 &1968140222
 GameObject:
   m_ObjectHideFlags: 0
