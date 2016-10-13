@@ -9,13 +9,7 @@ public class PickChicken : MonoBehaviour {
     private int chickensInDenCount = 0;
     private const int CHICKEN_COUNT_TO_WIN = 2;
     private bool gameOn = true;
-
-	// Use this for initialization
-	void Start () {
 	
-	}
-	
-	// Update is called once per frame
 	void Update () {
         if (chickensInDenCount == CHICKEN_COUNT_TO_WIN && gameOn) {
             print("You win!");
