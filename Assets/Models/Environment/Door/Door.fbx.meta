@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: a21b3175865ebdc4c89fc4075ce00a1b
-timeCreated: 1476354816
+guid: 75df95a4b1b93a24686e8c87218def99
+timeCreated: 1476386525
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Portti
+    4300000: Ovi
   materials:
     importMaterials: 1
     materialName: 0
