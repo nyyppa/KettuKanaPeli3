@@ -9,6 +9,7 @@ TagManager:
   - Guard
   - Den
   - Key
+  - Locked
   layers:
   - Default
   - TransparentFX
