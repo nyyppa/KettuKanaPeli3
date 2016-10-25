@@ -84,6 +84,9 @@ ModelImporter:
     400074: R_toe3
     400076: R_toe3_end
     4300000: Cube
+    7400000: Armature|idle
+    7400002: Armature|panic
+    7400004: Armature|walk
     9500000: //RootNode
     13700000: Cube
   materials:
