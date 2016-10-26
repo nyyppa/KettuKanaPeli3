@@ -27,7 +27,6 @@ public class ActionButton : MonoBehaviour {
         {
             isBiting = true;
             _animator.SetBool("isBiting", isBiting);
-            isBiting = false;
         }
     }
 }
