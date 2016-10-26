@@ -135,7 +135,1141 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/backcontroller
+        weight: 1
+      - path: Armature/backcontroller/mid
+        weight: 1
+      - path: Armature/backcontroller/mid/chest
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle/bottom_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle/top_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear/L_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear/R_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4/L_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4/R_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4/tail4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg4_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|bite
+      takeName: Armature|bite
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/backcontroller
+        weight: 1
+      - path: Armature/backcontroller/mid
+        weight: 1
+      - path: Armature/backcontroller/mid/chest
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle/bottom_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle/top_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear/L_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear/R_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4/L_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4/R_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4/tail4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg4_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|idle
+      takeName: Armature|idle
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/backcontroller
+        weight: 1
+      - path: Armature/backcontroller/mid
+        weight: 1
+      - path: Armature/backcontroller/mid/chest
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle/bottom_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle/top_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear/L_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear/R_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4/L_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4/R_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4/tail4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg4_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|jump
+      takeName: Armature|jump
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/backcontroller
+        weight: 1
+      - path: Armature/backcontroller/mid
+        weight: 1
+      - path: Armature/backcontroller/mid/chest
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle/bottom_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle/top_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear/L_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear/R_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4/L_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4/R_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4/tail4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg4_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|runDefault
+      takeName: Armature|runDefault
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/backcontroller
+        weight: 1
+      - path: Armature/backcontroller/mid
+        weight: 1
+      - path: Armature/backcontroller/mid/chest
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle/bottom_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle/top_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear/L_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear/R_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4/L_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4/R_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4/tail4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg4_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|runImproved
+      takeName: Armature|runImproved
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/backcontroller
+        weight: 1
+      - path: Armature/backcontroller/mid
+        weight: 1
+      - path: Armature/backcontroller/mid/chest
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle/bottom_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle/top_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear/L_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear/R_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4/L_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4/R_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4/tail4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg4_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|sneak
+      takeName: Armature|sneak
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/backcontroller
+        weight: 1
+      - path: Armature/backcontroller/mid
+        weight: 1
+      - path: Armature/backcontroller/mid/chest
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle/bottom_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle/top_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear/L_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear/R_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4/L_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4/R_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4/tail4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg4_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|sneakIdle
+      takeName: Armature|sneakIdle
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/backcontroller
+        weight: 1
+      - path: Armature/backcontroller/mid
+        weight: 1
+      - path: Armature/backcontroller/mid/chest
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle/bottom_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle/top_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear/L_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear/R_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4/L_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4/R_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4/tail4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg4_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cube|bite
+      takeName: Cube|bite
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/backcontroller
+        weight: 1
+      - path: Armature/backcontroller/mid
+        weight: 1
+      - path: Armature/backcontroller/mid/chest
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/bottom_muzzle/bottom_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/head/top_muzzle/top_muzzle_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/L_headside/L_ear/L_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear
+        weight: 1
+      - path: Armature/backcontroller/mid/chest/neck/R_headside/R_ear/R_ear_end
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4/L_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4
+        weight: 1
+      - path: Armature/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4/R_arm4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Armature/backcontroller/stomach/butt/tail1/tail2/tail3/tail4/tail4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg4_end
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4
+        weight: 1
+      - path: Armature/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg4_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

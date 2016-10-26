@@ -21,7 +21,6 @@ public class GuardPatrol : MonoBehaviour {
 	Rigidbody r;
 	//private Vector3 originalRotation;
 
-	// Use this for initialization
 	void Start () {
 		agent = GetComponent<NavMeshAgent> ();
 		setNextWaypoint (navPoints [0]);
@@ -56,6 +55,7 @@ public class GuardPatrol : MonoBehaviour {
 		}
 		rotationTime += Time.deltaTime;
 	}
+
 	void checkSpeed(){
 		if(player){
 			agent.speed = originalSpeed * pursuitMultiplier;
@@ -68,6 +68,7 @@ public class GuardPatrol : MonoBehaviour {
 
 		}
 	}
+
 	void Update () {
 		Rotate ();
 		checkSpeed ();
@@ -102,20 +103,23 @@ public class GuardPatrol : MonoBehaviour {
 			}
 		}
 	}
+
 	public void waypointReached(waypoint g){
 		if(g==nextWaypoint){
 			startNextWaypoint ();
 		}
 	}
+
 	void startNextWaypoint(){
 		if(waypointIndex>=navPoints.Length-1){
 			waypointIndex = 0;
 			setNextWaypoint (navPoints [waypointIndex]);
-		}else{
+		} else {
 			waypointIndex++;
 			setNextWaypoint (navPoints [waypointIndex]);
 		}
 	}
+
 	public void setVisionPoint(VisionPoint v){
 		if(visionpoint){
 			Destroy (visionpoint.gameObject);
@@ -129,8 +133,9 @@ public class GuardPatrol : MonoBehaviour {
 		line.SetPositions (new Vector3[]{gameObject.transform.position,v.transform.position});
 		Time.timeScale = 0;*/
 	}
+
 	public void visionPointReached(VisionPoint v){
-		if(visionpoint==v){
+		if (visionpoint==v) {
 			Destroy (v.gameObject);
 			visionpoint = null;
             if (!player)
