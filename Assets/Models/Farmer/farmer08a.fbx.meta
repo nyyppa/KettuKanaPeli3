@@ -130,12 +130,12 @@ ModelImporter:
     4300000: talikko.001
     4300002: Cube
     7400000: metarig|metarigAction
-    7400002: idle
-    7400004: guard
-    7400006: run
-    7400008: walk
-    7400010: attack
-    7400012: guard2-run
+    7400002: GuardIdle
+    7400004: GuardGuarding
+    7400006: GuardRun
+    7400008: GuardWalk
+    7400010: GuardAttack
+    7400012: GuardFlaslight
     9500000: //RootNode
     13700000: Cube
   materials:
@@ -308,7 +308,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: idle
+      name: GuardIdle
       takeName: metarig|metarigAction
       firstFrame: 0
       lastFrame: 60
@@ -456,7 +456,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: guard
+      name: GuardGuarding
       takeName: metarig|metarigAction
       firstFrame: 70
       lastFrame: 190
@@ -604,7 +604,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: run
+      name: GuardRun
       takeName: metarig|metarigAction
       firstFrame: 200
       lastFrame: 260
@@ -752,7 +752,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: walk
+      name: GuardWalk
       takeName: metarig|metarigAction
       firstFrame: 270
       lastFrame: 330
@@ -900,7 +900,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: attack
+      name: GuardAttack
       takeName: metarig|metarigAction
       firstFrame: 340
       lastFrame: 401
@@ -1048,7 +1048,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: guard2-run
+      name: GuardFlaslight
       takeName: metarig|metarigAction
       firstFrame: 410
       lastFrame: 525
