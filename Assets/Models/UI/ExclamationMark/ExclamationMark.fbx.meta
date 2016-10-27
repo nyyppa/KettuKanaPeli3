@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 70cb43185ef35ec48aaf37f5d320515a
-timeCreated: 1476175006
+guid: be4ed28e5f72ca94a99d7da3293210d8
+timeCreated: 1477566917
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: Camera
-    100002: Hemi
-    100004: //RootNode
+    100002: //RootNode
+    100004: Hemi
     100006: Huutomerkki
     400000: Camera
-    400002: Hemi
-    400004: //RootNode
+    400002: //RootNode
+    400004: Hemi
     400006: Huutomerkki
     2300000: Huutomerkki
     3300000: Huutomerkki
