@@ -44,6 +44,7 @@ ModelImporter:
     100072: R_toe2_end
     100074: R_toe3
     100076: R_toe3_end
+    100078: chic
     400000: Armature
     400002: backcontroller
     400004: Bone.006
@@ -83,6 +84,7 @@ ModelImporter:
     400072: R_toe2_end
     400074: R_toe3
     400076: R_toe3_end
+    400078: chic
     4300000: Cube
     7400000: Armature|idle
     7400002: Armature|panic
@@ -103,7 +105,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
