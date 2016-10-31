@@ -4,7 +4,6 @@ using System.Collections;
 public class ActionButton : MonoBehaviour {
 	public KeyCode UseKey=KeyCode.Space;
     Animator _animator;
-    bool isBiting = false;
 
     void Start()
     {
@@ -25,8 +24,9 @@ public class ActionButton : MonoBehaviour {
     {
         if (Input.GetKey(UseKey))
         {
-            isBiting = true;
-            _animator.SetBool("isBiting", isBiting);
+            _animator.SetBool("isBiting", true);
+        } else {
+            _animator.SetBool("isBiting", false);
         }
     }
 }

@@ -6,9 +6,14 @@ public class PlayerMovement : MonoBehaviour {
 	float speed = 6.0f;
 	float runSpeed = 9.0f;
 	[SerializeField] float rotateSpeed = 90f;
+    Animator _animator;
 
 	private Vector3 movement;
 	private Rigidbody playerRigidBody;
+
+    void Start() {
+        _animator = GetComponent<Animator>();
+    }
 
 	void Awake() {
 		// print ("alku" + transform.position);
@@ -23,7 +28,10 @@ public class PlayerMovement : MonoBehaviour {
 		if (lh != 0 || lv != 0) {
 
 			Move (lh, lv);
-		}
+        } else {
+            _animator.SetBool("isWalking", false);
+            _animator.SetBool("isRunning", false);
+        }
 	}
 
 	void Move(float lh, float lv) {
@@ -33,9 +41,14 @@ public class PlayerMovement : MonoBehaviour {
 
 		if (Input.GetKey (KeyCode.LeftShift)) {
 			movement = movement.normalized * runSpeed * Time.deltaTime;
-		} else {
+            _animator.SetBool("isRunning", true);
+            _animator.SetBool("isWalking", false);
+
+        } else {
 			movement = movement.normalized * speed * Time.deltaTime;
-		}
+            _animator.SetBool("isRunning", false);
+            _animator.SetBool("isWalking", true);
+        }
 
 		playerRigidBody.MovePosition (transform.position + movement);
 		// print (transform.position);
