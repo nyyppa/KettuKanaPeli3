@@ -14,4 +14,12 @@ public class ChickenAI : MonoBehaviour {
         _animator.SetBool("IsWalking", isWalking);
         _animator.SetBool("IsPanicking", isPanicking);
 	}
+	public void OnCollisionEnter(Collision other){
+		if(other.gameObject.tag.Equals("Fox")){
+			AttrackGuardsInDistance a = GetComponentInChildren<AttrackGuardsInDistance> ();
+			if(a){
+				a.callGuards ();
+			}
+		}
+	}
 }

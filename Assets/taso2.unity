@@ -4128,6 +4128,59 @@ Transform:
   - {fileID: 66954419}
   m_Father: {fileID: 625117}
   m_RootOrder: 1
+--- !u!1 &264119538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 264119539}
+  - 135: {fileID: 264119541}
+  - 114: {fileID: 264119540}
+  m_Layer: 0
+  m_Name: AttractGuardsRange
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &264119539
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264119538}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 2015094571}
+  m_RootOrder: 0
+--- !u!114 &264119540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264119538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41a38165cf20a74eb6e72594ef7b93c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &264119541
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264119538}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 290.69
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &266842473
 GameObject:
   m_ObjectHideFlags: 0
@@ -17616,6 +17669,14 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 6d63b7baabb15554f8e716b250d17b97, type: 2}
+    - target: {fileID: 400078, guid: 185d87f220d28cf41b126e60059d6023, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 185d87f220d28cf41b126e60059d6023, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 185d87f220d28cf41b126e60059d6023, type: 3}
   m_IsPrefabParent: 0
@@ -29526,6 +29587,61 @@ Transform:
   - {fileID: 1956398970}
   m_Father: {fileID: 1736360547}
   m_RootOrder: 0
+--- !u!1 &2015094570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2015094571}
+  - 114: {fileID: 2015094572}
+  - 135: {fileID: 2015094573}
+  m_Layer: 0
+  m_Name: ChickenPanicPod
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2015094571
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2015094570}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 264119539}
+  m_Father: {fileID: 1151340152}
+  m_RootOrder: 2
+--- !u!114 &2015094572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2015094570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd85abb7c6dc6334fb70ecabccafcbbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PanicTime: 5
+--- !u!135 &2015094573
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2015094570}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 145.99
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2016166614
 GameObject:
   m_ObjectHideFlags: 0

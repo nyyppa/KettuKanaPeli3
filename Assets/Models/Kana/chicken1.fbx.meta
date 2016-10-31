@@ -105,7 +105,313 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: chic|chicIdle
+      takeName: chic|chicIdle
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chic
+        weight: 1
+      - path: chic/backcontroller
+        weight: 1
+      - path: chic/backcontroller/L_hip
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe1
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe1/L_toe1_end
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe2
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe2/L_toe2_end
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe3
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe3/L_toe3_end
+        weight: 1
+      - path: chic/backcontroller/mid1
+        weight: 1
+      - path: chic/backcontroller/mid1/Bone.006
+        weight: 1
+      - path: chic/backcontroller/mid1/Bone.006/L_arm1
+        weight: 1
+      - path: chic/backcontroller/mid1/Bone.006/L_arm1/L_arm2
+        weight: 1
+      - path: chic/backcontroller/mid1/Bone.006/L_arm1/L_arm2/L_arm2_end
+        weight: 1
+      - path: chic/backcontroller/mid1/chest
+        weight: 1
+      - path: chic/backcontroller/mid1/chest/head
+        weight: 1
+      - path: chic/backcontroller/mid1/chest/head/head_end
+        weight: 1
+      - path: chic/backcontroller/mid1/R_shoulder
+        weight: 1
+      - path: chic/backcontroller/mid1/R_shoulder/R_arm1
+        weight: 1
+      - path: chic/backcontroller/mid1/R_shoulder/R_arm1/R_arm2
+        weight: 1
+      - path: chic/backcontroller/mid1/R_shoulder/R_arm1/R_arm2/R_arm2_end
+        weight: 1
+      - path: chic/backcontroller/mid2
+        weight: 1
+      - path: chic/backcontroller/mid2/butt
+        weight: 1
+      - path: chic/backcontroller/mid2/butt/butt_end
+        weight: 1
+      - path: chic/backcontroller/R_hip
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe1
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe1/R_toe1_end
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe2
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe2/R_toe2_end
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe3
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe3/R_toe3_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: chic|chicPanic
+      takeName: chic|chicPanic
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chic
+        weight: 1
+      - path: chic/backcontroller
+        weight: 1
+      - path: chic/backcontroller/L_hip
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe1
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe1/L_toe1_end
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe2
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe2/L_toe2_end
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe3
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe3/L_toe3_end
+        weight: 1
+      - path: chic/backcontroller/mid1
+        weight: 1
+      - path: chic/backcontroller/mid1/Bone.006
+        weight: 1
+      - path: chic/backcontroller/mid1/Bone.006/L_arm1
+        weight: 1
+      - path: chic/backcontroller/mid1/Bone.006/L_arm1/L_arm2
+        weight: 1
+      - path: chic/backcontroller/mid1/Bone.006/L_arm1/L_arm2/L_arm2_end
+        weight: 1
+      - path: chic/backcontroller/mid1/chest
+        weight: 1
+      - path: chic/backcontroller/mid1/chest/head
+        weight: 1
+      - path: chic/backcontroller/mid1/chest/head/head_end
+        weight: 1
+      - path: chic/backcontroller/mid1/R_shoulder
+        weight: 1
+      - path: chic/backcontroller/mid1/R_shoulder/R_arm1
+        weight: 1
+      - path: chic/backcontroller/mid1/R_shoulder/R_arm1/R_arm2
+        weight: 1
+      - path: chic/backcontroller/mid1/R_shoulder/R_arm1/R_arm2/R_arm2_end
+        weight: 1
+      - path: chic/backcontroller/mid2
+        weight: 1
+      - path: chic/backcontroller/mid2/butt
+        weight: 1
+      - path: chic/backcontroller/mid2/butt/butt_end
+        weight: 1
+      - path: chic/backcontroller/R_hip
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe1
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe1/R_toe1_end
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe2
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe2/R_toe2_end
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe3
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe3/R_toe3_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: chic|chicWalk
+      takeName: chic|chicWalk
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chic
+        weight: 1
+      - path: chic/backcontroller
+        weight: 1
+      - path: chic/backcontroller/L_hip
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe1
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe1/L_toe1_end
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe2
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe2/L_toe2_end
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe3
+        weight: 1
+      - path: chic/backcontroller/L_hip/L_leg1/L_leg2/L_toe3/L_toe3_end
+        weight: 1
+      - path: chic/backcontroller/mid1
+        weight: 1
+      - path: chic/backcontroller/mid1/Bone.006
+        weight: 1
+      - path: chic/backcontroller/mid1/Bone.006/L_arm1
+        weight: 1
+      - path: chic/backcontroller/mid1/Bone.006/L_arm1/L_arm2
+        weight: 1
+      - path: chic/backcontroller/mid1/Bone.006/L_arm1/L_arm2/L_arm2_end
+        weight: 1
+      - path: chic/backcontroller/mid1/chest
+        weight: 1
+      - path: chic/backcontroller/mid1/chest/head
+        weight: 1
+      - path: chic/backcontroller/mid1/chest/head/head_end
+        weight: 1
+      - path: chic/backcontroller/mid1/R_shoulder
+        weight: 1
+      - path: chic/backcontroller/mid1/R_shoulder/R_arm1
+        weight: 1
+      - path: chic/backcontroller/mid1/R_shoulder/R_arm1/R_arm2
+        weight: 1
+      - path: chic/backcontroller/mid1/R_shoulder/R_arm1/R_arm2/R_arm2_end
+        weight: 1
+      - path: chic/backcontroller/mid2
+        weight: 1
+      - path: chic/backcontroller/mid2/butt
+        weight: 1
+      - path: chic/backcontroller/mid2/butt/butt_end
+        weight: 1
+      - path: chic/backcontroller/R_hip
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe1
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe1/R_toe1_end
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe2
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe2/R_toe2_end
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe3
+        weight: 1
+      - path: chic/backcontroller/R_hip/R_leg/R_leg2/R_toe3/R_toe3_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
