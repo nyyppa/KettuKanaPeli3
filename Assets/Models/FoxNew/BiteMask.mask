@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1011 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BiteMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Cube
+    m_Weight: 0
+  - m_Path: fox
+    m_Weight: 0
+  - m_Path: fox/backcontroller
+    m_Weight: 0
+  - m_Path: fox/backcontroller/mid
+    m_Weight: 0
+  - m_Path: fox/backcontroller/mid/chest
+    m_Weight: 0
+  - m_Path: fox/backcontroller/mid/chest/neck
+    m_Weight: 1
+  - m_Path: fox/backcontroller/mid/chest/neck/head
+    m_Weight: 1
+  - m_Path: fox/backcontroller/mid/chest/neck/head/bottom_muzzle
+    m_Weight: 1
+  - m_Path: fox/backcontroller/mid/chest/neck/head/bottom_muzzle/bottom_muzzle_end
+    m_Weight: 1
+  - m_Path: fox/backcontroller/mid/chest/neck/head/top_muzzle
+    m_Weight: 1
+  - m_Path: fox/backcontroller/mid/chest/neck/head/top_muzzle/top_muzzle_end
+    m_Weight: 1
+  - m_Path: fox/backcontroller/mid/chest/neck/L_headside
+    m_Weight: 1
+  - m_Path: fox/backcontroller/mid/chest/neck/L_headside/L_ear
+    m_Weight: 1
+  - m_Path: fox/backcontroller/mid/chest/neck/L_headside/L_ear/L_ear_end
+    m_Weight: 1
+  - m_Path: fox/backcontroller/mid/chest/neck/R_headside
+    m_Weight: 1
+  - m_Path: fox/backcontroller/mid/chest/neck/R_headside/R_ear
+    m_Weight: 1
+  - m_Path: fox/backcontroller/mid/chest/neck/R_headside/R_ear/R_ear_end
+    m_Weight: 1
+  - m_Path: fox/backcontroller/mid/L_shoulder
+    m_Weight: 0
+  - m_Path: fox/backcontroller/mid/L_shoulder/L_arm1
+    m_Weight: 0
+  - m_Path: fox/backcontroller/mid/L_shoulder/L_arm1/L_arm2
+    m_Weight: 0
+  - m_Path: fox/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3
+    m_Weight: 0
+  - m_Path: fox/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4
+    m_Weight: 0
+  - m_Path: fox/backcontroller/mid/L_shoulder/L_arm1/L_arm2/L_arm3/L_arm4/L_arm4_end
+    m_Weight: 0
+  - m_Path: fox/backcontroller/mid/R_shoulder
+    m_Weight: 0
+  - m_Path: fox/backcontroller/mid/R_shoulder/R_arm1
+    m_Weight: 0
+  - m_Path: fox/backcontroller/mid/R_shoulder/R_arm1/R_arm2
+    m_Weight: 0
+  - m_Path: fox/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3
+    m_Weight: 0
+  - m_Path: fox/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4
+    m_Weight: 0
+  - m_Path: fox/backcontroller/mid/R_shoulder/R_arm1/R_arm2/R_arm3/R_arm4/R_arm4_end
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/butt
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/butt/tail1
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/butt/tail1/tail2
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/butt/tail1/tail2/tail3
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/butt/tail1/tail2/tail3/tail4
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/butt/tail1/tail2/tail3/tail4/tail4_end
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/L_hip
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/L_hip/L_leg1
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/L_hip/L_leg1/L_leg2
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/L_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg4_end
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/R_hip
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/R_hip/R_leg1
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/R_hip/R_leg1/R_leg2
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4
+    m_Weight: 0
+  - m_Path: fox/backcontroller/stomach/R_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg4_end
+    m_Weight: 0

@@ -3,7 +3,6 @@ using System.Collections;
 
 namespace Kettukanapeli {
 	public class PickKey : MonoBehaviour {
-
 		public GameObject keyInMouth;
 
 		void Update () {
@@ -16,7 +15,6 @@ namespace Kettukanapeli {
 			}
 		}
 		
-
 		void OnTriggerEnter(Collider collider) {
 			if (collider.gameObject.tag.Equals ("Locked") && keyInMouth.activeSelf) {
 				keyInMouth.SetActive(false);

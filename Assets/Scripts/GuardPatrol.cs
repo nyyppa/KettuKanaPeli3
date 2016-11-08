@@ -19,10 +19,12 @@ public class GuardPatrol : MonoBehaviour {
 	public float maxRotateTime=2;
 	public float rotationTime=9000;
 	Rigidbody r;
+    Animator _animator;
 	//private Vector3 originalRotation;
 
 	void Start () {
-		agent = GetComponent<NavMeshAgent> ();
+        _animator = GetComponent<Animator>();
+        agent = GetComponent<NavMeshAgent> ();
 		setNextWaypoint (navPoints [0]);
 		originalSpeed = agent.speed;
 		pursuit.SetActive (false);
@@ -30,9 +32,9 @@ public class GuardPatrol : MonoBehaviour {
 		r = GetComponent<Rigidbody> ();
 		agent.updateRotation =false;
 		rotationTime = maxRotateTime * 3 + 1;
-	}
+    }
 
-	void setNextWaypoint(waypoint w){
+    void setNextWaypoint(waypoint w){
 		agent.SetDestination (w.transform.position);
 		nextWaypoint = w;
 	}
@@ -65,7 +67,6 @@ public class GuardPatrol : MonoBehaviour {
 			}else{
 				agent.speed = originalSpeed;
 			}
-
 		}
 	}
 
@@ -138,12 +139,9 @@ public class GuardPatrol : MonoBehaviour {
 		if (visionpoint==v) {
 			Destroy (v.gameObject);
 			visionpoint = null;
-            if (!player)
-            {
+            if (!player) {
                 rotationTime = 0;
 			}
-			
-
 		}
 	}
 
