@@ -23,8 +23,7 @@ public class GuardPatrol : MonoBehaviour {
 	//private Vector3 originalRotation;
 
 	void Start () {
-        _animator = GetComponent<Animator>();
-        agent = GetComponent<NavMeshAgent> ();
+		agent = GetComponent<NavMeshAgent> ();
 		setNextWaypoint (navPoints [0]);
 		originalSpeed = agent.speed;
 		pursuit.SetActive (false);
@@ -32,9 +31,10 @@ public class GuardPatrol : MonoBehaviour {
 		r = GetComponent<Rigidbody> ();
 		agent.updateRotation =false;
 		rotationTime = maxRotateTime * 3 + 1;
+        _animator = GetComponent<Animator>();
     }
 
-    void setNextWaypoint(waypoint w){
+	void setNextWaypoint(waypoint w){
 		agent.SetDestination (w.transform.position);
 		nextWaypoint = w;
 	}
@@ -44,31 +44,44 @@ public class GuardPatrol : MonoBehaviour {
 		if(rotationTime<maxRotateTime){
 			Quaternion deltaRotation = Quaternion.Euler (transform.up * rotationSpeed * Time.deltaTime);
 			transform.rotation = r.rotation*deltaRotation;
- 
-  
+            
 		}else if(rotationTime<maxRotateTime * 3){
 			Quaternion deltaRotation = Quaternion.Euler (transform.up * rotationSpeed * Time.deltaTime);
 			transform.rotation = r.rotation * Quaternion.Inverse(deltaRotation);
 
-  
-		}else{
-
+        }else{
 			agent.updateRotation = true;
-		}
+            
+        }
 		rotationTime += Time.deltaTime;
 	}
 
 	void checkSpeed(){
 		if(player){
 			agent.speed = originalSpeed * pursuitMultiplier;
+            _animator.SetBool("IsRunning", true);
 		}else{
-			if(rotationTime<maxRotateTime*3){
+            _animator.SetBool("IsRunning", false);
+            if (rotationTime<maxRotateTime*3){
 				agent.speed = 0;
-			}else{
+                _animator.SetBool("IsWalking", false);
+                _animator.SetBool("IsGuarding", true);
+            }
+            else{
 				agent.speed = originalSpeed;
-			}
+                _animator.SetBool("IsWalking", true);
+                _animator.SetBool("IsGuarding", false);
+            }
+
 		}
 	}
+
+    public void Attack() {
+        _animator.SetBool("IsAttacking", true);
+    }
+    public void StopAttack(){
+        _animator.SetBool("IsAttacking", false);
+    }
 
 	void Update () {
 		Rotate ();
@@ -78,6 +91,7 @@ public class GuardPatrol : MonoBehaviour {
 			if(!pursuit.activeSelf){
 				pursuit.SetActive (true);
 				noticed.SetActive (false);
+
 			}
 		} else if (visionpoint) {
 			if(!noticed.activeSelf){
@@ -139,7 +153,8 @@ public class GuardPatrol : MonoBehaviour {
 		if (visionpoint==v) {
 			Destroy (v.gameObject);
 			visionpoint = null;
-            if (!player) {
+            if (!player)
+            {
                 rotationTime = 0;
 			}
 		}
