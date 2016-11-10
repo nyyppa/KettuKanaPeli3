@@ -49,14 +49,14 @@ namespace Kettukanapeli
             agent.updateRotation = false;
             if (rotationTime < maxRotateTime)
             {
-                Quaternion deltaRotation = Quaternion.Euler(transform.up * rotationSpeed * Time.deltaTime);
-                transform.rotation = r.rotation * deltaRotation;
+				/*  Quaternion deltaRotation = Quaternion.Euler(transform.up * rotationSpeed * Time.deltaTime);
+                transform.rotation = r.rotation * deltaRotation;*/
 
             }
             else if (rotationTime < maxRotateTime * 3)
             {
-                Quaternion deltaRotation = Quaternion.Euler(transform.up * rotationSpeed * Time.deltaTime);
-                transform.rotation = r.rotation * Quaternion.Inverse(deltaRotation);
+				/*   Quaternion deltaRotation = Quaternion.Euler(transform.up * rotationSpeed * Time.deltaTime);
+                transform.rotation = r.rotation * Quaternion.Inverse(deltaRotation);*/
 
             }
             else

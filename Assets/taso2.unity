@@ -33351,8 +33351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d8a95b4d01b34648b70ee89d6a35a0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dampTime: 0.15
-  target: {fileID: 1336125170}
+  player: {fileID: 1336125159}
+  offset: {x: 0, y: 50, z: 10}
 --- !u!1 &1965549403
 GameObject:
   m_ObjectHideFlags: 0
