@@ -40,8 +40,6 @@ namespace Kettukanapeli
         }
     }
 
-
-
     public class SoundController : MonoBehaviour
     {
 
