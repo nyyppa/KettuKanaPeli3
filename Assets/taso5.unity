@@ -2211,7 +2211,7 @@ Transform:
   m_Children:
   - {fileID: 1794438388}
   m_Father: {fileID: 1701623248}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!208 &110838527
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5384,7 +5384,7 @@ Transform:
   m_Children:
   - {fileID: 215762866}
   m_Father: {fileID: 1701623248}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!208 &252976929
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -12019,7 +12019,7 @@ Transform:
   m_Children:
   - {fileID: 708962418}
   m_Father: {fileID: 1701623248}
-  m_RootOrder: 15
+  m_RootOrder: 14
 --- !u!208 &675091000
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -24867,7 +24867,7 @@ Transform:
   m_Children:
   - {fileID: 323627067}
   m_Father: {fileID: 1701623248}
-  m_RootOrder: 16
+  m_RootOrder: 15
 --- !u!208 &1271199978
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -25195,7 +25195,7 @@ Transform:
   m_Children:
   - {fileID: 641084263}
   m_Father: {fileID: 1701623248}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!208 &1286522865
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -27340,7 +27340,7 @@ Transform:
   m_Children:
   - {fileID: 811712788}
   m_Father: {fileID: 1701623248}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!208 &1376095115
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -28666,141 +28666,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1071010362}
   m_RootOrder: 0
---- !u!1 &1450543208
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1000013603652332, guid: 9a3890941f625da42b8768e99d001507,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1450543209}
-  - 33: {fileID: 1450543215}
-  - 23: {fileID: 1450543214}
-  - 54: {fileID: 1450543213}
-  - 64: {fileID: 1450543212}
-  - 114: {fileID: 1450543211}
-  - 208: {fileID: 1450543210}
-  m_Layer: 0
-  m_Name: "\xC4mp\xE4ri (9)"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1450543209
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4000010965956944, guid: 9a3890941f625da42b8768e99d001507,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1450543208}
-  m_LocalRotation: {x: -0.67529637, y: -3.4743065e-17, z: 6.490331e-17, w: 0.7375465}
-  m_LocalPosition: {x: -1.7, y: -1.9295254, z: -12}
-  m_LocalScale: {x: 54.42186, y: 54.765316, z: 58.991158}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 1826532260}
-  m_Father: {fileID: 1701623248}
-  m_RootOrder: 7
---- !u!208 &1450543210
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1450543208}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.009000001, y: 0.010000001, z: 0.009000001}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: -0.003, z: 0.001}
-  m_TimeToStationary: 0.5
---- !u!114 &1450543211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013421908806, guid: 9a3890941f625da42b8768e99d001507,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1450543208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dba9621c4309579418525102a3a7ac49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guards:
-  - {fileID: 625115}
-  - {fileID: 907149151}
---- !u!64 &1450543212
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 64000010902214104, guid: 9a3890941f625da42b8768e99d001507,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1450543208}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 84ac9b266e830ce4baeb0d23d05f2374, type: 3}
---- !u!54 &1450543213
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 54000012366916294, guid: 9a3890941f625da42b8768e99d001507,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1450543208}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!23 &1450543214
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 23000011149141466, guid: 9a3890941f625da42b8768e99d001507,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1450543208}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 6c01fcc34e7c76142905721ad8e985fd, type: 2}
-  - {fileID: 2100000, guid: d7fd5ffe6a929ae4b952c4d01e6edb80, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!33 &1450543215
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33000011624444378, guid: 9a3890941f625da42b8768e99d001507,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1450543208}
-  m_Mesh: {fileID: 4300000, guid: 84ac9b266e830ce4baeb0d23d05f2374, type: 3}
 --- !u!1 &1454354864
 GameObject:
   m_ObjectHideFlags: 0
@@ -32781,7 +32646,7 @@ Transform:
   m_Children:
   - {fileID: 591142976}
   m_Father: {fileID: 1701623248}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!208 &1674590926
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -33556,7 +33421,6 @@ Transform:
   - {fileID: 1951823184}
   - {fileID: 1290355446}
   - {fileID: 792698727}
-  - {fileID: 1450543209}
   - {fileID: 2074399403}
   - {fileID: 1286522864}
   - {fileID: 252976928}
@@ -33859,7 +33723,7 @@ Transform:
   m_Children:
   - {fileID: 1957882185}
   m_Father: {fileID: 1701623248}
-  m_RootOrder: 18
+  m_RootOrder: 17
 --- !u!208 &1726258982
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -35331,36 +35195,6 @@ Transform:
   - {fileID: 304356200}
   m_Father: {fileID: 1038849292}
   m_RootOrder: 1
---- !u!1 &1826532259
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1000012478463314, guid: 9a3890941f625da42b8768e99d001507,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1826532260}
-  m_Layer: 0
-  m_Name: Noise
-  m_TagString: Untagged
-  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1826532260
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4000010643178778, guid: 9a3890941f625da42b8768e99d001507,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1826532259}
-  m_LocalRotation: {x: 0.67529637, y: 3.4743065e-17, z: -6.490331e-17, w: 0.7375465}
-  m_LocalPosition: {x: 0.005, y: -0.061, z: 0.005}
-  m_LocalScale: {x: 0.01837497, y: 0.01696181, z: 0.018249614}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 1450543209}
-  m_RootOrder: 0
 --- !u!1 &1828684285
 GameObject:
   m_ObjectHideFlags: 0
@@ -36767,7 +36601,7 @@ Transform:
   m_Children:
   - {fileID: 776870186}
   m_Father: {fileID: 1701623248}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!208 &1914583737
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -36902,7 +36736,7 @@ Transform:
   m_Children:
   - {fileID: 1585474131}
   m_Father: {fileID: 1701623248}
-  m_RootOrder: 17
+  m_RootOrder: 16
 --- !u!208 &1916610282
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -37055,7 +36889,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1918050820}
   m_LocalRotation: {x: 0.67529637, y: 3.4743065e-17, z: -6.490331e-17, w: 0.7375465}
-  m_LocalPosition: {x: 0.005, y: -0.061, z: 0.005}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01837497, y: 0.01696181, z: 0.018249614}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -40194,7 +40028,7 @@ Transform:
   m_Children:
   - {fileID: 823304705}
   m_Father: {fileID: 1701623248}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!208 &2074399404
 NavMeshObstacle:
   m_ObjectHideFlags: 0
