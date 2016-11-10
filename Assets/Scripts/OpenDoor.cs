@@ -1,14 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class OpenDoor : UseStuff {
-	public GameObject lockedDoor;
+namespace Kettukanapeli
+{
+    public class OpenDoor : UseStuff
+    {
+        public GameObject lockedDoor;
 
-	public override void UseStuffAction(){
-		if(lockedDoor){
-			lockedDoor.SetActive (false);
-		}
+        public override void UseStuffAction()
+        {
+            if (lockedDoor)
+            {
+                lockedDoor.SetActive(false);
+            }
 
-		gameObject.SetActive (false);
-	}
+            gameObject.SetActive(false);
+        }
+    }
 }

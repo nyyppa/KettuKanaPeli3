@@ -1,18 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PuppyAI : MonoBehaviour {
-    Animator _animator;
-    
-	void Start () {
-        _animator = GetComponent<Animator>();
-    }
-    
-    void Update () {
-	
-	}
+namespace Kettukanapeli
+{
+    public class PuppyAI : MonoBehaviour
+    {
+        Animator _animator;
 
-    void Walk() {
-        _animator.SetBool("isRunning", true);
+        void Start()
+        {
+            _animator = GetComponent<Animator>();
+        }
+
+        void Update()
+        {
+
+        }
+
+        void Walk()
+        {
+            _animator.SetBool("isRunning", true);
+        }
     }
 }

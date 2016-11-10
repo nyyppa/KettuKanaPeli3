@@ -5,10 +5,6 @@ namespace Kettukanapeli {
 	public class PickKey : MonoBehaviour {
 		public GameObject keyInMouth;
 
-		void Update () {
-	
-		}
-
 		void OnTriggerStay(Collider collider){
 			if(collider.gameObject.tag.Equals ("Key") && !keyInMouth.activeSelf) {				// & action button pressed
 				keyInMouth.SetActive(true);

@@ -1,187 +1,241 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GuardPatrol : MonoBehaviour {
-	private NavMeshAgent agent;
-	public waypoint[] navPoints;
-	private waypoint nextWaypoint;
-	private int waypointIndex=0;
-	public VisionPoint visionpoint;
-	public Vector3 destination;
-    public float spottedMultiplier = 1.5f;
-	public float pursuitMultiplier = 2;
-	GameObject player;
-	private float originalSpeed;
-	public GameObject pursuit;
-	public GameObject noticed;
-	public float rotationSpeed=1;
-	public float RotationDegree=90;
-	public float maxRotateTime=2;
-	public float rotationTime=9000;
-	Rigidbody r;
-    Animator _animator;
-	//private Vector3 originalRotation;
+namespace Kettukanapeli
+{
+    public class GuardPatrol : MonoBehaviour
+    {
+        private NavMeshAgent agent;
+        public waypoint[] navPoints;
+        private waypoint nextWaypoint;
+        private int waypointIndex = 0;
+        public VisionPoint visionpoint;
+        public Vector3 destination;
+        public float spottedMultiplier = 1.5f;
+        public float pursuitMultiplier = 2;
+        GameObject player;
+        private float originalSpeed;
+        public GameObject pursuit;
+        public GameObject noticed;
+        public float rotationSpeed = 1;
+        public float RotationDegree = 90;
+        public float maxRotateTime = 2;
+        public float rotationTime = 9000;
+        Rigidbody r;
+        Animator _animator;
+        //private Vector3 originalRotation;
 
-	void Start () {
-		agent = GetComponent<NavMeshAgent> ();
-		setNextWaypoint (navPoints [0]);
-		originalSpeed = agent.speed;
-		pursuit.SetActive (false);
-		noticed.SetActive (false);
-		r = GetComponent<Rigidbody> ();
-		agent.updateRotation =false;
-		rotationTime = maxRotateTime * 3 + 1;
-        _animator = GetComponent<Animator>();
-    }
-
-	void setNextWaypoint(waypoint w){
-		agent.SetDestination (w.transform.position);
-		nextWaypoint = w;
-	}
-
-	void Rotate(){
-		agent.updateRotation = false;
-		if(rotationTime<maxRotateTime){
-			Quaternion deltaRotation = Quaternion.Euler (transform.up * rotationSpeed * Time.deltaTime);
-			transform.rotation = r.rotation*deltaRotation;
-            
-		}else if(rotationTime<maxRotateTime * 3){
-			Quaternion deltaRotation = Quaternion.Euler (transform.up * rotationSpeed * Time.deltaTime);
-			transform.rotation = r.rotation * Quaternion.Inverse(deltaRotation);
-
-        }else{
-			agent.updateRotation = true;
-            
+        void Start()
+        {
+            agent = GetComponent<NavMeshAgent>();
+            setNextWaypoint(navPoints[0]);
+            originalSpeed = agent.speed;
+            pursuit.SetActive(false);
+            noticed.SetActive(false);
+            r = GetComponent<Rigidbody>();
+            agent.updateRotation = false;
+            rotationTime = maxRotateTime * 3 + 1;
+            _animator = GetComponent<Animator>();
         }
-		rotationTime += Time.deltaTime;
-	}
 
-	void checkSpeed(){
-		if(player){
-			agent.speed = originalSpeed * pursuitMultiplier;
-            _animator.SetBool("IsRunning", true);
-		}else{
-            _animator.SetBool("IsRunning", false);
-            if (rotationTime<maxRotateTime*3){
-				agent.speed = 0;
-                _animator.SetBool("IsWalking", false);
-                _animator.SetBool("IsGuarding", true);
-            }
-            else{
-				agent.speed = originalSpeed;
-                _animator.SetBool("IsWalking", true);
-                _animator.SetBool("IsGuarding", false);
-            }
+        void setNextWaypoint(waypoint w)
+        {
+            agent.SetDestination(w.transform.position);
+            nextWaypoint = w;
+        }
 
-		}
-	}
-
-    public void Attack() {
-        _animator.SetBool("IsAttacking", true);
-    }
-    public void StopAttack(){
-        _animator.SetBool("IsAttacking", false);
-    }
-
-	void Update () {
-		Rotate ();
-		checkSpeed ();
-		if(player){
-			agent.destination = player.transform.position;
-			if(!pursuit.activeSelf){
-				pursuit.SetActive (true);
-				noticed.SetActive (false);
-
-			}
-		} else if (visionpoint) {
-			if(!noticed.activeSelf){
-				noticed.SetActive (true);
-				pursuit.SetActive (false);
-			}
-		} else {
-			if(noticed.activeSelf){
-				noticed.SetActive (false);
-			}
-			if(pursuit.activeSelf){
-				pursuit.SetActive (false);
-			}
-		}
-		destination=agent.destination;
-
-		if(agent.isPathStale) {
-			agent.ResetPath ();
-		}
-
-		if(agent.pathStatus==NavMeshPathStatus.PathPartial||agent.pathStatus==NavMeshPathStatus.PathInvalid) {
-			if(!agent.pathPending){
-				startNextWaypoint ();
-			}
-		}
-	}
-
-	public void waypointReached(waypoint g){
-		if(g==nextWaypoint){
-			startNextWaypoint ();
-		}
-	}
-
-	void startNextWaypoint(){
-		if(waypointIndex>=navPoints.Length-1){
-			waypointIndex = 0;
-			setNextWaypoint (navPoints [waypointIndex]);
-		} else {
-			waypointIndex++;
-			setNextWaypoint (navPoints [waypointIndex]);
-		}
-	}
-
-	public void setVisionPoint(VisionPoint v){
-		if(visionpoint){
-			Destroy (visionpoint.gameObject);
-		}
-		visionpoint = v;
-		agent.SetDestination (v.transform.position);
-		/*print (agent.nextPosition);
-		print (this.transform.position);
-		print (transform.tag);
-		LineRenderer line = GetComponent<LineRenderer> ();
-		line.SetPositions (new Vector3[]{gameObject.transform.position,v.transform.position});
-		Time.timeScale = 0;*/
-	}
-
-	public void visionPointReached(VisionPoint v){
-		if (visionpoint==v) {
-			Destroy (v.gameObject);
-			visionpoint = null;
-            if (!player)
+        void Rotate()
+        {
+            agent.updateRotation = false;
+            if (rotationTime < maxRotateTime)
             {
-                rotationTime = 0;
-			}
-		}
-	}
+                Quaternion deltaRotation = Quaternion.Euler(transform.up * rotationSpeed * Time.deltaTime);
+                transform.rotation = r.rotation * deltaRotation;
 
-	void OnCollisionEnter(Collision other){
-		if(other.collider.tag.Equals ("Fox")){
-			Destroy (other.collider.gameObject);
-            print("You lose!");
-		}
-	}
+            }
+            else if (rotationTime < maxRotateTime * 3)
+            {
+                Quaternion deltaRotation = Quaternion.Euler(transform.up * rotationSpeed * Time.deltaTime);
+                transform.rotation = r.rotation * Quaternion.Inverse(deltaRotation);
 
-	public void followPlayer(GameObject player){
-		this.player = player;
-		if(player==null){
-			if(visionpoint){
-				if(agent.destination!=visionpoint.transform.position){
-					agent.SetDestination (visionpoint.transform.position);
-				}
-			}else{
-				if(agent.destination!=nextWaypoint.transform.position){
-					agent.SetDestination (nextWaypoint.transform.position);				
-				}
-			}
-		}else{
+            }
+            else
+            {
+                agent.updateRotation = true;
 
-		}
+            }
+            rotationTime += Time.deltaTime;
+        }
 
-	}
+        void checkSpeed()
+        {
+            if (player)
+            {
+                agent.speed = originalSpeed * pursuitMultiplier;
+                _animator.SetBool("IsRunning", true);
+            }
+            else
+            {
+                _animator.SetBool("IsRunning", false);
+                if (rotationTime < maxRotateTime * 3)
+                {
+                    agent.speed = 0;
+                    _animator.SetBool("IsWalking", false);
+                    _animator.SetBool("IsGuarding", true);
+                }
+                else
+                {
+                    agent.speed = originalSpeed;
+                    _animator.SetBool("IsWalking", true);
+                    _animator.SetBool("IsGuarding", false);
+                }
+
+            }
+        }
+
+        public void Attack()
+        {
+            _animator.SetBool("IsAttacking", true);
+        }
+        public void StopAttack()
+        {
+            _animator.SetBool("IsAttacking", false);
+        }
+
+        void Update()
+        {
+            Rotate();
+            checkSpeed();
+            if (player)
+            {
+                agent.destination = player.transform.position;
+                if (!pursuit.activeSelf)
+                {
+                    pursuit.SetActive(true);
+                    noticed.SetActive(false);
+
+                }
+            }
+            else if (visionpoint)
+            {
+                if (!noticed.activeSelf)
+                {
+                    noticed.SetActive(true);
+                    pursuit.SetActive(false);
+                }
+            }
+            else
+            {
+                if (noticed.activeSelf)
+                {
+                    noticed.SetActive(false);
+                }
+                if (pursuit.activeSelf)
+                {
+                    pursuit.SetActive(false);
+                }
+            }
+            destination = agent.destination;
+
+            if (agent.isPathStale)
+            {
+                agent.ResetPath();
+            }
+
+            if (agent.pathStatus == NavMeshPathStatus.PathPartial || agent.pathStatus == NavMeshPathStatus.PathInvalid)
+            {
+                if (!agent.pathPending)
+                {
+                    startNextWaypoint();
+                }
+            }
+        }
+
+        public void waypointReached(waypoint g)
+        {
+            if (g == nextWaypoint)
+            {
+                startNextWaypoint();
+            }
+        }
+
+        void startNextWaypoint()
+        {
+            if (waypointIndex >= navPoints.Length - 1)
+            {
+                waypointIndex = 0;
+                setNextWaypoint(navPoints[waypointIndex]);
+            }
+            else
+            {
+                waypointIndex++;
+                setNextWaypoint(navPoints[waypointIndex]);
+            }
+        }
+
+        public void setVisionPoint(VisionPoint v)
+        {
+            if (visionpoint)
+            {
+                Destroy(visionpoint.gameObject);
+            }
+            visionpoint = v;
+            agent.SetDestination(v.transform.position);
+            /*print (agent.nextPosition);
+            print (this.transform.position);
+            print (transform.tag);
+            LineRenderer line = GetComponent<LineRenderer> ();
+            line.SetPositions (new Vector3[]{gameObject.transform.position,v.transform.position});
+            Time.timeScale = 0;*/
+        }
+
+        public void visionPointReached(VisionPoint v)
+        {
+            if (visionpoint == v)
+            {
+                Destroy(v.gameObject);
+                visionpoint = null;
+                if (!player)
+                {
+                    rotationTime = 0;
+                }
+            }
+        }
+
+        void OnCollisionEnter(Collision other)
+        {
+            if (other.collider.tag.Equals("Fox"))
+            {
+                Destroy(other.collider.gameObject);
+                print("You lose!");
+            }
+        }
+
+        public void followPlayer(GameObject player)
+        {
+            this.player = player;
+            if (player == null)
+            {
+                if (visionpoint)
+                {
+                    if (agent.destination != visionpoint.transform.position)
+                    {
+                        agent.SetDestination(visionpoint.transform.position);
+                    }
+                }
+                else
+                {
+                    if (agent.destination != nextWaypoint.transform.position)
+                    {
+                        agent.SetDestination(nextWaypoint.transform.position);
+                    }
+                }
+            }
+            else
+            {
+
+            }
+
+        }
+    }
 }
