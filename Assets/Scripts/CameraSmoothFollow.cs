@@ -6,30 +6,32 @@ namespace Kettukanapeli
     public class CameraSmoothFollow : MonoBehaviour
     {
 
-        public float dampTime = 0.15f;
-        private Vector3 velocity = Vector3.zero;
-        public Transform target;
-        Camera cam;
+		public GameObject player;       //Public variable to store a reference to the player game object
 
-        void Start()
-        {
-            cam = GetComponent<Camera>();
-        }
 
-        void Update()
-        {
-            if (target)
-            {
-                Vector3 point = cam.WorldToViewportPoint(target.position);
-                Vector3 delta = target.position - cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); //(new Vector3(0.5, 0.5, point.z));
-                Vector3 destination = transform.position + delta;
-                transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
-            }
-        }
+		private Vector3 offset;         //Private variable to store the offset distance between the player and camera
+
+		// Use this for initialization
+		void Start () 
+		{
+			//Calculate and store the offset value by getting the distance between the player's position and camera's position.
+			offset = transform.position - player.transform.position;
+		}
+
+		// LateUpdate is called after Update each frame
+		void LateUpdate () 
+		{
+			if(player){
+				// Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
+				transform.position = player.transform.position + offset;
+			}
+
+		}
 
         public void GameOver()
         {
-            target = null;
+			player = null;
         }
+
     }
 }
