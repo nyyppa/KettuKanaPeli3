@@ -9,13 +9,12 @@ namespace Kettukanapeli
         ParticleSystem particleSystem;
         public float ParticlePlayTime = 0.5f;
         private float particleStartTime;
-        // Use this for initialization
+
         void Start()
         {
             particleSystem = GetComponent<ParticleSystem>();
         }
 
-        // Update is called once per frame
         void Update()
         {
             if (particleSystem && particleSystem.isPlaying)
