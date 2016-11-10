@@ -9,14 +9,14 @@ namespace Kettukanapeli
 		[SerializeField]
 		private Text _message;
 
-		[SerializeField]
-		private Text _points;
-
         [SerializeField]
         private Button _startGameButton;
 
         [SerializeField]
         private Button _newGameButton;
+
+        [SerializeField]
+        private Button _quitGameButton;
 
 		private void Awake()
 		{
@@ -25,13 +25,7 @@ namespace Kettukanapeli
 				Debug.LogError ( "GUIManager: _message is null!" );
 				Debug.Break ();
 			}
-
-            if ( _points == null )
-            {
-                Debug.LogError ( "GUIManager: _points is null!" );
-                Debug.Break ();
-            }
-
+            
             if ( _startGameButton == null )
             {
                 Debug.LogError ( "GUIManager: _startGameButton is null!" );
@@ -42,6 +36,12 @@ namespace Kettukanapeli
             {
                 Debug.LogError ( "GUIManager: _newGameButton is null!" );
                 Debug.Break ();
+            }
+
+            if (_quitGameButton == null)
+            {
+                Debug.LogError ( "GUIManager: _quitGameButton is null!" );
+                Debug.Break();
             }
 
             _newGameButton.gameObject.SetActive ( false );
@@ -58,22 +58,18 @@ namespace Kettukanapeli
 		{
 			_message.gameObject.SetActive ( false );
 		}
-
-		public void UpdatePoints(int points)
-		{
-			//_points.text = "Points " + points;
-			_points.text = string.Format ( "Points {0}", points );
-		}
-
+        
         public void StartGame()
         {
             _startGameButton.gameObject.SetActive ( false );
+            _quitGameButton.gameObject.SetActive ( false );
         }
 
         public void GameOver()
         {
             ShowMessage ( "Game Over!" );
             _newGameButton.gameObject.SetActive ( true );
+            _quitGameButton.gameObject.SetActive ( true );
         }
 	}
 }

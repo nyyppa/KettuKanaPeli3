@@ -12,7 +12,6 @@ namespace Kettukanapeli
         void Start()
         {
             _animator = GetComponentInParent<Animator>();
-            print(_animator);
         }
 
         void Update()

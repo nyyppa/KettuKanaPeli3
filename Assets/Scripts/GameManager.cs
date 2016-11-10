@@ -31,9 +31,8 @@ namespace Kettukanapeli
         #endregion
 
         private Camera _mainCamera;
-        private CameraSmoothFollow _cameraFollow;
+        private CameraSmoothFollow _cameraSmoothFollow;
         private GUIManager _guiManager;
-        private int _points = 0;
 
         public GUIManager GUIManager
         {
@@ -74,7 +73,7 @@ namespace Kettukanapeli
         private void Init ()
         {
             _mainCamera = Camera.main;
-            _cameraFollow = _mainCamera.GetComponent<CameraSmoothFollow> ();
+            _cameraSmoothFollow = _mainCamera.GetComponent<CameraSmoothFollow> ();
             Pause ( true );
         }
 
@@ -94,13 +93,7 @@ namespace Kettukanapeli
         {
             Pause ( true );
             GUIManager.GameOver ();
-            _cameraFollow.GameOver ();
-        }
-
-        public void AddPoints ( int points )
-        {
-            _points += points; // _points = _points + points;
-            GUIManager.UpdatePoints ( _points );
+            _cameraSmoothFollow.GameOver ();
         }
 
         public void StartGame ()
@@ -111,6 +104,11 @@ namespace Kettukanapeli
         public void OnNewGamePressed ()
         {
             SceneManager.LoadScene ( SceneManager.GetActiveScene ().name );
+        }
+
+        public void OnQuitGamePressed ()
+        {
+            Application.Quit();
         }
     } 
 }
