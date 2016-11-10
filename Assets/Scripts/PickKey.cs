@@ -16,5 +16,6 @@ namespace Kettukanapeli {
 				keyInMouth.SetActive(false);
 			}
 		}
+
 	}
 }

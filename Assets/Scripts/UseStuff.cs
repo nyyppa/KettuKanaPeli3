@@ -1,9 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class UseStuff : MonoBehaviour {
+namespace Kettukanapeli
+{
+    public class UseStuff : MonoBehaviour
+    {
 
-	public virtual void UseStuffAction(){
-		
-	}
+        public virtual void UseStuffAction()
+        {
+
+        }
+    }
 }
