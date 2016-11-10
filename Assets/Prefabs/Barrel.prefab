@@ -26,7 +26,7 @@ GameObject:
   - 114: {fileID: 114000011623061200}
   - 65: {fileID: 65000013199976644}
   m_Layer: 0
-  m_Name: tynnyri
+  m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
