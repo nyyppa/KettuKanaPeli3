@@ -12,11 +12,6 @@ namespace Kettukanapeli
             _animator = GetComponent<Animator>();
         }
 
-        void Update()
-        {
-
-        }
-
         void Walk()
         {
             _animator.SetBool("isRunning", true);
