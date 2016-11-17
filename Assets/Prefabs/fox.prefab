@@ -481,6 +481,7 @@ GameObject:
   - 114: {fileID: 114000012253323750}
   - 114: {fileID: 114000010611135020}
   - 114: {fileID: 114000013157639720}
+  - 114: {fileID: 114000012605063182}
   m_Layer: 0
   m_Name: fox
   m_TagString: Untagged
@@ -1572,6 +1573,17 @@ MonoBehaviour:
   chickenInMouth: {fileID: 0}
   chickenInDen1: {fileID: 0}
   chickenInDen2: {fileID: 0}
+--- !u!114 &114000012605063182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012331122344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577c70deedb818045992b01fb48c81a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000012731503548
 MonoBehaviour:
   m_ObjectHideFlags: 1

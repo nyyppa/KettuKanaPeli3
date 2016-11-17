@@ -14,10 +14,12 @@ namespace Kettukanapeli
 
         private Vector3 movement;
         private Rigidbody playerRigidBody;
+		private AttractGuardsInDistance attarctGuards;
 
         void Start()
         {
             _animator = GetComponent<Animator>();
+			attarctGuards = GetComponent<AttractGuardsInDistance> ();
         }
 
         void Awake()
@@ -53,6 +55,9 @@ namespace Kettukanapeli
             {
                 _animator.SetBool("isRunning", true);
                 movement = movement.normalized * runSpeed * Time.deltaTime;
+				if(attarctGuards){
+					attarctGuards.callGuards ();
+				}
             }
             else
             {

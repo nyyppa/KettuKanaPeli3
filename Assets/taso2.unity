@@ -22490,6 +22490,17 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 400014, guid: 9522c5558d1ff0f46b6443f98396041a, type: 3}
   m_PrefabInternal: {fileID: 1652453846}
+--- !u!114 &1336125171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336125159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577c70deedb818045992b01fb48c81a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1336792588
 GameObject:
   m_ObjectHideFlags: 0
@@ -23128,7 +23139,7 @@ ParticleSystem:
   moveWithTransform: 1
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: 1884821009
+  randomSeed: -1778787535
   InitialModule:
     serializedVersion: 2
     enabled: 1
