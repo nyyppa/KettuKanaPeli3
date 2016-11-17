@@ -30,21 +30,30 @@ namespace Kettukanapeli
 
         void OnCollisionEnter(Collision other)
         {
-            if (other.collider.tag.Equals("Fox"))
-            {
-                for (int i = 0; i < guards.Length; i++)
-                {
-                    Vision v = guards[i].gameObject.GetComponentInChildren<Vision>();
-                    if (v)
-                    {
-                        Transform t = new GameObject().transform;
-                        t.position = transform.position + new Vector3(1, 0, 1);
-                        v.setVisionPoint(t);
-                        Destroy(t.gameObject);
-                    }
-                }
-            }
+			CallGuards (other.collider.tag);
         }
+		void OnTriggerEnter(Collider collider){
+			CallGuards (collider.tag);
+		}
+
+		void CallGuards(string tag){
+			if (tag.Equals("Fox"))
+			{
+				for (int i = 0; i < guards.Length; i++)
+				{
+					Vision v = guards[i].gameObject.GetComponentInChildren<Vision>();
+					if (v)
+					{
+						Transform t = new GameObject().transform;
+						t.position = transform.position + new Vector3(1, 0, 1);
+						v.setVisionPoint(t);
+						Destroy(t.gameObject);
+					}
+				}
+			}
+		}
 
     }
+
+
 }
