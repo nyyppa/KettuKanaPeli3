@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: kk_wooden_door
+  m_Name: fh wood door 4
   m_Shader: {fileID: 4800000, guid: 054a31a99d11e49d110086ba44295342, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -18,7 +18,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: e2195db5b3ef3f2418f2c35aa1bc72f6, type: 3}
+        m_Texture: {fileID: 2800000, guid: b45d02c672c29d34b8898b38422a9f80, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -30,11 +30,11 @@ Material:
     m_Floats:
     - first:
         name: _Outline
-      second: 0.005
+      second: 0.0043
     m_Colors:
     - first:
         name: _Color
-      second: {r: 1, g: 0.8760649, b: 0.6544118, a: 1}
+      second: {r: 0.66176474, g: 0.49424297, b: 0.19463667, a: 1}
     - first:
         name: _OutlineColor
       second: {r: 0, g: 0, b: 0, a: 1}
